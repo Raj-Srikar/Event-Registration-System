@@ -10,6 +10,7 @@ import jakarta.persistence.MappedSuperclass;
 public class Authentication {
 	
 	public static String tableName;
+	public static String user;
 	
 	@Id
 	private String username;
@@ -69,6 +70,7 @@ public class Authentication {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.age = age;
+		user = username;
 	}
 	
 	public Authentication() {

@@ -5,9 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import com.cognizant.ers.entity.Event;
-import com.cognizant.ers.repo.EventRepository;
-
 @SpringBootApplication
 public class EventRegistrationSystemApplication {
 
@@ -16,10 +13,6 @@ public class EventRegistrationSystemApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(EventRegistrationSystemApplication.class, args);
-
-//		EventRepository repo = context.getBean(EventRepository.class);
-//		Event e = new Event("My Event", null, null, null, 0, null, null, "org");
-//		repo.save(e);
 	}
 
 }

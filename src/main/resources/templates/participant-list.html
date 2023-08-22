@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${eventTitle}"></h1>
+	<h3>Participants</h3>
+	<div th:if="${participantsList.empty}">
+		<span>No participants registered yet</span>
+	</div>
+	<div th:each="participant : ${participantsList}">
+		<span th:text="${participant}"></span>
+	</div>
+</body>
+</html>
